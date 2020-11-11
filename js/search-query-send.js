@@ -44,7 +44,7 @@ class SearchQuerySend {
 		if (this._quickSearch(searchQuery)) {
 			return;
 		}
-		
-		this._openURL(searchEngineSwitcher.getSearchEngineURLPrefix() + searchQuery);
+
+		this._openURL('https://duckduckgo.com/?q=' + searchQuery);
 	}
 }

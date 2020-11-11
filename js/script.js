@@ -23,7 +23,7 @@ const searchQuerySend = new SearchQuerySend();
 const autoSuggestion = new AutoSuggestion();
 
 // Instantiate search engine settings
-const searchEngineSwitcher = new SearchEngineSwitcher();
+//const searchEngineSwitcher = new SearchEngineSwitcher();
 
 // Instantiate autosuggestion
 const paramQuerySend = new ParamQuerySend();
@@ -32,7 +32,7 @@ const paramQuerySend = new ParamQuerySend();
 const webMenu = new WebMenu();
 
 // Instantiate theme switcher
-const themeSwitcher = new ThemeSwitcher();
+//const themeSwitcher = new ThemeSwitcher();
 
 // Instantiate key events
 const documentKeyEvents = new DocumentKeyEvents();

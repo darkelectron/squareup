@@ -18,20 +18,6 @@ class DocumentKeyEvents {
 					return;
 				}
 
-				// Switch search engine
-				if (this._keysLog['Control'] && e.code === 'Space') {
-					e.preventDefault();
-					searchEngineSwitcher.searchEngineSwitch();
-					return;
-				}
-
-				// Switch color scheme
-				if (this._keysLog['Alt'] && e.code === 'Space') {
-					e.preventDefault();
-					themeSwitcher.themeSwitch();
-					return;
-				}
-
 				delete this._keysLog[e.key];
 			}
 		);

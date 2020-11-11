@@ -1,4 +1,4 @@
-class PanelButtons {	
+class PanelButtons {
 	constructor() {
 		this._panel = document.querySelector('#panel-body');
 		this._panelSites = config.getPanelSites();
@@ -34,37 +34,37 @@ class PanelButtons {
 			'panel-button-image',
 			`url('assets/buttons/${icon}.svg')`
 		);
-			
+
 		panelButton.appendChild(buttonImage);
 		this._panel.appendChild(panelButton);
 	}
-	
+
 	_generateFromList() {
 		for (let i = 0; i < (this._panelSites.length); i++) {
-	
+
 			const site = this._panelSites[parseInt(i, 10)].site;
 			const icon = this._panelSites[parseInt(i, 10)].icon;
 			const url = this._panelSites[parseInt(i, 10)].url;
-	
+
 			// Create an href
 			const panelLink = document.createElement('a');
 			panelLink.className = 'panel-link';
 			panelLink.href = url;
 			panelLink.tabIndex = '-1';
-	
+
 			// Create div container
 			const panelButton = this._buildPanelButton(
 				site,
 				'panel-button'
 			);
-	
+
 			// Create div container for button icon
 			const buttonImage = this._buildPanelButtonImage(
 				`button-image-${i}`,
 				'panel-button-image',
 				`url('assets/webcons/${icon}.svg')`
 			);
-	
+
 			// Append divs
 			panelButton.appendChild(buttonImage);
 			panelLink.appendChild(panelButton);
@@ -85,25 +85,5 @@ class PanelButtons {
 
 		// Create web shortcuts
 		this._generateFromList();
-
-		// Create search engine switcher button
-		this._generateFromManual(
-			'search-engine',
-			'search-engine', 
-			() => {
-				// Look search-engine-settings.js
-				console.log('Switch search engine');
-			}
-		);
-
-		// Create theme switcher
-		this._generateFromManual(
-			'theme-switch',
-			'theme-switch',
-			() => {
-				// Look theme-switcher.js
-				console.log('Switch theme');
-			}
-		);
-	}
+  }
 }

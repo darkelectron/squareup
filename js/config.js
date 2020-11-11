@@ -1,27 +1,6 @@
 class Config {
 	constructor() { }
 
-	getThemeMode() {
-		const themeModes = {
-			'light': {
-				name: 'Light',
-				icon: 'light-mode'
-			},
-			'dark': {
-				name: 'Dark',
-				icon: 'dark-mode'
-			},
-			'auto': {
-				name: 'Auto',
-				icon: 'auto-mode',
-				lightHour: '7',
-				darkHour: '18'
-			}
-		};
-
-		return themeModes;
-	}
-
 	getFontFamily() {
 		const fontFamilies = {
 			'monospace': 'Fira Code Retina, Hack, Ubuntu Mono, Monaco, Lucida Console, monospace',
@@ -61,49 +40,6 @@ class Config {
 		};
 
 		return quickSearchData;
-	}
-
-	getSearchEngines() {
-
-		const searchEngines = {
-			'startpage': {
-				name: 'Startpage',
-				prefix: 'https://www.startpage.com/do/dsearch?query=',
-				icon: 'startpage'
-			},
-			'qwant': {
-				name: 'Qwant',
-				prefix: 'https://www.qwant.com/?q=',
-				icon: 'qwant'
-			},
-			'ecosia': {
-				name: 'Ecosia',
-				prefix: 'https://www.ecosia.org/search?q=',
-				icon: 'ecosia'
-			},
-			'duckduckgo': {
-				name: 'Duckduckgo',
-				prefix: 'https://duckduckgo.com/?q=',
-				icon: 'duckduckgo'
-			},
-			'yahoo': {
-				name: 'Yahoo',
-				prefix: 'https://search.yahoo.com/search?p=',
-				icon: 'yahoo'
-			},
-			'google': {
-				name: 'Google',
-				prefix: 'https://www.google.com/search?q=',
-				icon: 'google'
-			},
-			'bing': {
-				name: 'Bing',
-				prefix: 'https://www.bing.com/search?q=',
-				icon: 'bing'
-			}
-		};
-
-		return searchEngines;
 	}
 
 	getWebSites() {
